@@ -1,0 +1,52 @@
+<p>billing works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2> Billing </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label>ID</label>
+        </div>
+        <div class="col">
+            <label>Product Name</label>
+        </div>
+        <div class="col">
+            <label>Price</label>
+        </div>
+        <div class="col">
+            <label>Count</label>
+        </div>
+        <div class="col">
+            <label>Total</label>
+        </div>
+        <div class="col">
+            <label> Action</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" id="prodId" name="prodId"/>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="prodName" name="prodName"/>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="prodPrice" name="prodPrice" (keyup)="calculateTotal()"/>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="prodCount" name="prodCount" (keyup)="calculateTotal()"/>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="prodTotal" name="prodTotal" readonly/>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-success" (click)="addProduct()">Add Product</button>
+        </div>
+    </div>
+    <br>
+    <div id="tabEntryRow">
+        
+    </div>
+</div>
