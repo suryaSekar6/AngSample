@@ -19,23 +19,15 @@
           <li class="nav-item">
             <a class="nav-link active" href="">Payment</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg>
-              Profile
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#"> surya</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"> suryasekar0630@gmail.com</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"> 8428980630 </a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="">Logout</a></li>
-            </ul>
+          <li ngbDropdown class="nav-item">
+            <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>Action</button>
+              <button ngbDropdownItem>Another action</button>
+              <button ngbDropdownItem>Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem>Separated link</button>
+            </div>
           </li>
         </ul>
         <form class="d-flex">

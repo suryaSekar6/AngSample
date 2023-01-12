@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './common/login/login.component';
@@ -20,7 +20,6 @@ import { UsersComponent } from './admin/users/users.component';
     AppComponent,
     LoginComponent,
     LogoutComponent,
-    HeaderComponent,
     FooterComponent,
     HomeComponent,
     CategoryComponent,
@@ -33,6 +32,8 @@ import { UsersComponent } from './admin/users/users.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
+    HeaderComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
