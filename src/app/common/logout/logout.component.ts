@@ -9,9 +9,4 @@ import { Router } from '@angular/router';
 export class LogoutComponent {
 
   constructor(private router: Router){}
-
-  logoutUser(){
-    sessionStorage.removeItem('user');
-    this.router.navigate(['/login']);
-  }
 }
