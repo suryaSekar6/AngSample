@@ -15,6 +15,7 @@ import { GroupsComponent } from './admin/groups/groups.component';
 import { RolesComponent } from './admin/roles/roles.component';
 import { UsersComponent } from './admin/users/users.component';
 import { FormComponent } from './form/form.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormComponent } from './form/form.component';
     GroupsComponent,
     RolesComponent,
     UsersComponent,
-    FormComponent
+    FormComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
