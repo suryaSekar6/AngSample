@@ -14,6 +14,7 @@ import { BillingComponent } from './products/billing/billing.component';
 import { GroupsComponent } from './admin/groups/groups.component';
 import { RolesComponent } from './admin/roles/roles.component';
 import { UsersComponent } from './admin/users/users.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsersComponent } from './admin/users/users.component';
     BillingComponent,
     GroupsComponent,
     RolesComponent,
-    UsersComponent
+    UsersComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

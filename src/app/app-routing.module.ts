@@ -8,6 +8,7 @@ import { LogoutComponent } from './common/logout/logout.component';
 import { BillingComponent } from './products/billing/billing.component';
 import { CategoryComponent } from './products/category/category.component';
 import { HomeComponent } from './products/home/home.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'category', component: CategoryComponent},
   {path: 'bill', component: BillingComponent},
-  {path: 'logout', component: LogoutComponent}
+  {path: 'logout', component: LogoutComponent},
+  {path: 'form', component: FormComponent}
 ];
 
 @NgModule({

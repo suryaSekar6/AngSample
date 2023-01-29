@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(to top, rgb(13, 213, 220), white);
+}
+
+.container {
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+span {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    font-family: 'Times New Roman', Times, serif;
+}

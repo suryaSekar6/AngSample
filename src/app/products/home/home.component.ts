@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit{
 
+  products : any= [];
+
+
   constructor(private router : Router){ 
   }
 
@@ -17,5 +20,7 @@ export class HomeComponent implements OnInit{
     if(sessUser == ''){
       this.router.navigate(['/login']);
     }
+
+    this.products = ["Mobiles", "Food", "Laptops", "Bikes", "Cars"];
   }
 }
