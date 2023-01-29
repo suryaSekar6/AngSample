@@ -4,19 +4,21 @@
     padding:0;
     box-sizing: border-box;
 }
+p{
+    margin-left: 40%;
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 5%;
     min-height: 100vh;
-    background-image: url(./../assets/Photos/payment2.webp);
     padding-bottom: 50px;
 }
 .container form{
+    margin-left: 5%;
     padding: 20px;
     width: 700px;
-    background-image: url(./../assets/Photos/online-payment-.webp);
 }
 .container form .row .col{
     display: flex;
@@ -51,5 +53,5 @@
     cursor: pointer;                
 }
 .container form .summitbtn:hover{
-    background: #00ff0d;
+    background: #06e30a;
 }

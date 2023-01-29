@@ -9,6 +9,7 @@ import { BillingComponent } from './products/billing/billing.component';
 import { CategoryComponent } from './products/category/category.component';
 import { HomeComponent } from './products/home/home.component';
 import { FormComponent } from './form/form.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'category', component: CategoryComponent},
   {path: 'bill', component: BillingComponent},
   {path: 'logout', component: LogoutComponent},
-  {path: 'form', component: FormComponent}
+  {path: 'form', component: FormComponent},
+  {path: 'payment', component: PaymentComponent}
 ];
 
 @NgModule({
