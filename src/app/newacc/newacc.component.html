@@ -1,0 +1,51 @@
+<div class="container shadow-lg p-5 mb-7">
+    <div class="para">
+        SKY HOSPITAL
+    </div>
+     <h4> Create your new account </h4>
+  <div class="row">
+     <div class="col" style="margin-top: 1%;">
+       <input type="text" class="form-control" placeholder="First name" id="fname" required>
+       <label id="fnameMsg"></label>
+     </div>
+     <div class="col" style="margin-top: 1%;">
+       <input type="text" class="form-control" placeholder="Last name" id="lname" required>
+       <label id="lnameMsg"></label>
+     </div>
+   </div>
+   <br>
+   <div class="col-auto">
+     <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+     <div class="input-group">
+       <div class="input-group-text">@</div>
+       <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username" required>
+       <div id="userHelp" class="form-text" style="margin-left: 2%;">You can use numbers,letters & periods.</div>            
+     </div>
+   </div>
+   <br>
+   <div class="col">
+     <input type="number" class="form-control" placeholder="mobile no" id="mobno" required>
+     <label id="mobnoMsg"></label>
+   </div>
+   <br>
+   <div class="col">
+     <input type="email" class="form-control" placeholder=" Email id " id="email" required>
+     <label id="emailMsg"></label>
+     <div id="emailHelp" class="form-text" style="margin-left: 2%;">We'll never share your email with anyone else.</div>
+   </div>
+   <br>
+   <div class="row">
+   <div class="col" style="margin-bottom: 5%;">
+     <span for="exampleInputPassword1" class="form-label">Password</span>
+     <input type="password" class="form-control" id="pass" onkeyup="Validatepass()" required>
+     <label id="passMsg"></label>
+   </div>
+   <div class="col">
+     <span for="exampleInputPassword1" class="form-label">Confirm password</span>
+     <input type="password" class="form-control" id="confirmpass" onkeyup="Validatecpass()" required>
+     <label id="confirmpassMsg"></label>
+   </div>
+  </div>
+    <button type="button" value="summit" class="btn btn-success" onclick="Validateregister()">Register</button>
+ </div>
+ <br>
