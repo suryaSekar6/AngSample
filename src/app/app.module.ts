@@ -16,6 +16,8 @@ import { RolesComponent } from './admin/roles/roles.component';
 import { UsersComponent } from './admin/users/users.component';
 import { FormComponent } from './form/form.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
+import { NewaccComponent } from './newacc/newacc.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PaymentComponent } from './payment/payment.component';
     RolesComponent,
     UsersComponent,
     FormComponent,
-    PaymentComponent
+    PaymentComponent,
+    ForgetpassComponent,
+    NewaccComponent
   ],
   imports: [
     BrowserModule,

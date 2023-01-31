@@ -10,6 +10,8 @@ import { CategoryComponent } from './products/category/category.component';
 import { HomeComponent } from './products/home/home.component';
 import { FormComponent } from './form/form.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ForgetpassComponent } from './forgetpass/forgetpass.component';
+import { NewaccComponent } from './newacc/newacc.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'bill', component: BillingComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'form', component: FormComponent},
-  {path: 'payment', component: PaymentComponent}
+  {path: 'payment', component: PaymentComponent},
+  {path: 'forgetpass', component: ForgetpassComponent},
+  {path: 'newacc', component: NewaccComponent}
 ];
 
 @NgModule({

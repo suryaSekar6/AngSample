@@ -21,6 +21,6 @@ export class HomeComponent implements OnInit{
       this.router.navigate(['/login']);
     }
 
-    this.products = ["Mobiles", "Food", "Laptops", "Bikes", "Cars"];
+    this.products = ["Nebulizer", "Defibrillator", "ECG", "Cardiac Monitor", "Pulse Oximeter","Laboratory and Pharmacy 24x7"];
   }
 }

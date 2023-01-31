@@ -1,8 +1,8 @@
 <form>
-    <div class="container" style="width:30%; margin-left: 30%;">
+    <div class="container shadow-lg p-3 mb-5 bg-body rounded" style="width:35%; margin-left: 30%; margin-top: 5%;">
         <br>
         <h2><b> Login </b></h2>
-        <h5>Don't have an account? <a href="" class="card-link" style="color: darkgreen;">create account </a></h5>
+        <h5>Don't have an account? <a href="./newacc" class="card-link" style="color: darkgreen;">create account </a></h5>
         <br>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">User Name</label>
@@ -16,8 +16,8 @@
         <div>
             <button type="button" (click)="validateLogin()" class="btn btn-primary">Login</button>
         </div>
+        <div><a href="./forgetpass" class="card-link text-danger" style="margin-left:70%; font-weight: 700;">Forget password </a></div>
         <br>
         <p style="color: red;">{{ msg }}</p>
-        <br>
     </div>
 </form>
