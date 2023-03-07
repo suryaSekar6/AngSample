@@ -24,28 +24,28 @@
    </div>
    <br>
    <div class="col">
-     <input type="number" class="form-control" placeholder="mobile no" id="mobno" required>
-     <label id="mobnoMsg"></label>
+     <input type="number" class="form-control" placeholder="mobile no" [(ngModel)]="mobno" id="mobno" (keyup)="validateMob()" required>
+     <label>{{mobnoMsg}}</label>
    </div>
    <br>
    <div class="col">
-     <input type="email" class="form-control" placeholder=" Email id " id="email" required>
-     <label id="emailMsg"></label>
+     <input type="email" class="form-control" placeholder=" Email id " [(ngModel)]="email" id="email" (keyup)="validateEmail()" required>
+     <label>{{emailMsg}}</label>
      <div id="emailHelp" class="form-text" style="margin-left: 2%;">We'll never share your email with anyone else.</div>
    </div>
    <br>
    <div class="row">
    <div class="col" style="margin-bottom: 5%;">
      <span for="exampleInputPassword1" class="form-label">Password</span>
-     <input type="password" class="form-control" id="pass" onkeyup="Validatepass()" required>
-     <label id="passMsg"></label>
+     <input type="password" class="form-control" id="pass" [(ngModel)]="password" (keyup)="validatePassword()" required>
+     <label>{{passMsg}}</label>
    </div>
    <div class="col">
      <span for="exampleInputPassword1" class="form-label">Confirm password</span>
-     <input type="password" class="form-control" id="confirmpass" onkeyup="Validatecpass()" required>
-     <label id="confirmpassMsg"></label>
+     <input type="password" class="form-control" id="confirmpass" [(ngModel)]="cfPassword" (keyup)="validatecpass()" required>
+     <label>{{cfpassMsg}}</label>
    </div>
   </div>
-    <button type="button" value="summit" class="btn btn-success" onclick="Validateregister()">Register</button>
+    <button type="button" value="summit" class="btn btn-success" (click)="validateregister">Register</button>
  </div>
  <br>

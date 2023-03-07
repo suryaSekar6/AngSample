@@ -1,3 +1,4 @@
+<div style="background: linear-gradient(to top, rgb(13, 213, 220), white);">
     <div class="container shadow-lg p-5 mb-7 bg-body rounded">
         <form>
             <div style="margin-left: 2%;">
@@ -20,21 +21,21 @@
             <div class="row g-2">
                 <div class="col-md-6">
                     <label>First Name :</label>
-                    <span id="fnameMsg"></span>
-                    <input type="text" class="form-control" id="fname" required>
+                    <span>{{fnameMsg}}</span>
+                    <input type="text" class="form-control" [(ngModel)]="fname" name="fname" required>
                 </div>
                 <div class="col-md-6">
                     <label>Last Name :</label>
-                    <span id="lnameMsg"></span>
-                    <input type="text" class="form-control" id="lname" required>
+                    <span>{{lnameMsg}}</span>
+                    <input type="text" class="form-control" [(ngModel)]="lname"  name="lname" required>
                 </div>
             </div>
             <br>
             <div class="row g-2">
                 <div class="col-md-6">
                     <label>Mobile no :</label>
-                    <span id="mobMsg"></span>
-                    <input type="number" class="form-control" id="mobno" required>
+                    <span>{{mobnoMsg}}</span>
+                    <input type="number" class="form-control" [(ngModel)]="mobno"  name="mobno" required>
                 </div>
                 <div class="col-md-6">
                     <label>Date of Birth :</label>
@@ -45,8 +46,8 @@
             <div class="row g-2">
                 <div class="col-md-6">
                     <label>Email :</label>
-                    <span id="emailMsg"></span>
-                    <input type="email" class="form-control" id="email" required>
+                    <span>{{emailMsg}}</span>
+                    <input type="email" class="form-control" [(ngModel)]="email"  name="email" required>
                 </div>
                 <div class="col-md-6">
                     <label>Gender :</label>
@@ -116,9 +117,9 @@
             </div>
             <br>
             <div>
-                <label>Which procedure do you want to make an appointment for?</label><span id="treatMsg"></span>
-                <select class="form-select" style="width: 50%; margin-left: 15%; margin-top: 3%;" id="treatment"
-                    required>
+                <label>Which procedure do you want to make an appointment for?</label><span>{{treatMsg}}</span>
+                <select class="form-select" style="width: 50%; margin-left: 15%; margin-top: 3%;" [(ngModel)]="treatment" 
+                name="treatment" required>
                     <option selected>Open this select menu</option>
                     <option>General Checkup</option>
                     <option>Result Analysis</option>
@@ -133,8 +134,10 @@
             </div>
             <hr>
             <div class="col-6" style="margin-left: 40%;">
-                <button class="btn btn-success" type="submit" onclick="Validatesummit()">Submit form</button>
+                <button class="btn btn-success" type="submit" (click)="Validatesummit()">Submit form</button>
             </div>
             <br>
         </form>
     </div>
+    <br><br>
+</div>

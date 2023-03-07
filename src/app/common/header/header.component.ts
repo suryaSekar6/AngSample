@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,7 +8,22 @@ import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [NgbNavModule, NgbDropdownModule],
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
+
+  user: string = '';
+  userMob : string = '';
+  userEmail : string = '';
+
+  ngOnInit(): void {
+    
+    this.user = sessionStorage.getItem('user') || '';
+    this.userEmail = sessionStorage.getItem('userEmail') || '';
+    this.userMob = sessionStorage.getItem('userMob') || '';
+
+  }
 
 }
-export class NgbdDropdownBasic{}
+export class NgbdDropdownBasic
+{
+
+}

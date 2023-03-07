@@ -77,53 +77,53 @@
             <h4>Paracetomal</h4>
             <h6>MRP <span>(Rs.100)</span></h6>
             <h6>Rs.79</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="paracetomalCount('-','paracetomol')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="ParaCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="paracetomalCount('+','paracetomol')">+</button>
+            </div>
             <br>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
-            <img src="../../../assets/Pharmacy/benylin.png" height="50%" width="52%" />
+            <img src="../../../assets/Pharmacy/benylin.png" height="53%" width="67%" />
             <h4>Benylin</h4>
             <h6>MRP <span>(Rs.120)</span></h6>
             <h6>Rs.99</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="benylinCount('-','Benylin')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="BenyCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="benylinCount('+','Benylin')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
-            <img src="../../../assets/Pharmacy/Rexall.jpg" height="30%" width="25%" />
+            <img src="../../../assets/Pharmacy/Rexall.jpg" height="30%" width="33%" />
             <h4>Rexall</h4>
             <h6>MRP <span>(Rs.80)</span></h6>
             <h6>Rs.69</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="rexallCount('-','Rexall')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="RexallCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="rexallCount('+','Rexall')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
-            <img src="../../../assets/Pharmacy/Tylenol.jpg" height="50%" width="35%" />
+            <img src="../../../assets/Pharmacy/Tylenol.jpg" height="50%" width="46%" />
             <h4>Tylenol</h4>
             <h6>MRP <span>(Rs.150)</span></h6>
             <h6>Rs.139</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="tylenolCount('-','Tylenol')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="TyleCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="tylenolCount('+','Tylenol')">+</button>
+            </div>
         </div>
     </div>
     <br><br>
@@ -133,53 +133,52 @@
             <h4>Equate</h4>
             <h6>MRP <span>(Rs.60)</span></h6>
             <h6>Rs.49</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
-            <br>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="equateCount('-','Equate')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="EquCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="equateCount('+','Equate')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/Motrin.jpeg" height="50%" width="49%" />
             <h4>Motrin</h4>
             <h6>MRP <span>(Rs.140)</span></h6>
             <h6>Rs.129</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="mortinCount('-','Mortin')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="MortCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="mortinCount('+','Mortin')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/stomach pain1.jfif" height="30%" width="48%" />
             <h4>Equate Relif</h4>
             <h6>MRP <span>(Rs.90)</span></h6>
             <h6>Rs.89</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="relifCount('-','Relif')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="RelifCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="relifCount('+','Relif')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/stomach pain2.jfif" height="50%" width="47%" />
             <h4>Pepto iesmol</h4>
             <h6>MRP <span>(Rs.130)</span></h6>
             <h6>Rs.119</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="peptoCount('-','Pepto')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="PeptCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="peptoCount('+','Pepto')">+</button>
+            </div>
         </div>
     </div>
     <br><br>
@@ -189,53 +188,52 @@
             <h4>Vicks</h4>
             <h6>MRP <span>(Rs.50)</span></h6>
             <h6>Rs.39</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
-            <br>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="vicksCount('-','Vicks')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="VicksCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="vicksCount('+','Vicks')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/injection.jfif" height="50%" width="49%" />
             <h4>Injection</h4>
             <h6>MRP <span>(Rs.30)</span></h6>
             <h6>Rs.19</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="injectionCount('-','Injection')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="InjectCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="injectionCount('+','Injection')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/pampers.jfif" height="30%" width="48%" />
             <h4>Pampers</h4>
             <h6>MRP <span>(Rs.70)</span></h6>
             <h6>Rs.59</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="pampersCount('-','Pampers')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="PampCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="pampersCount('+','Pampers')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/sp.jfif" height="50%" width="47%" />
             <h4>Sanitary Pads</h4>
             <h6>MRP <span>(Rs.110)</span></h6>
             <h6>Rs.99</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="sanitaryCount('-','Sanitary')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="SanitaryCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="sanitaryCount('+','Sanitary')">+</button>
+            </div>
         </div>
     </div>
     <br><br>
@@ -245,53 +243,52 @@
             <h4>Babykit</h4>
             <h6>MRP <span>(Rs.200)</span></h6>
             <h6>Rs.189</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
-            <br>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="babyCount('-','Babykit')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="BabyCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="babyCount('+','Babykit')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/check.jfif" height="50%" width="42%" />
             <h4>BP&Pulse meter</h4>
             <h6>MRP <span>(Rs.1250)</span></h6>
             <h6>Rs.999</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="meterCount('-','Meter')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="MeterCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="meterCount('+','Meter')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/grape wtaer.jfif" height="30%" width="33%" />
             <h4>grape water</h4>
             <h6>MRP <span>(Rs.90)</span></h6>
             <h6>Rs.89</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="grapeCount('-','Grape')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="GrapeCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="grapeCount('+','Grape')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/Mhorlics.jfif" height="50%" width="35%" />
             <h4>Mothers Horlicks</h4>
             <h6>MRP <span>(Rs.140)</span></h6>
             <h6>Rs.129</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="mothershCount('-','Mothers')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="MothershCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="mothershCount('+','Mothers')">+</button>
+            </div>
         </div>
     </div>
     <br><br>
@@ -301,53 +298,52 @@
             <h4>herbskin</h4>
             <h6>MRP <span>(Rs.250)</span></h6>
             <h6>Rs.239</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
-            <br>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="herbCount('-','Herbskin')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="HerbsCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="herbCount('+','Herbskin')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/skin care.jfif" height="50%" width="61%" />
             <h4>Skin Enormal</h4>
             <h6>MRP <span>(Rs.300)</span></h6>
             <h6>Rs.289</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="enormalCount('-','Enormal')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="EnormalCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="enormalCount('+','Enormal')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/boost.jfif" height="30%" width="40%" />
             <h4>Boost</h4>
             <h6>MRP <span>(Rs.80)</span></h6>
             <h6>Rs.69</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="boostCount('-','Boost')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="BoostCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="boostCount('+','Boost')">+</button>
+            </div>
         </div>
         <div class="col-md-3 shadow-lg p-3 mb-5 bg-body rounded" style="margin-left: 4%;">
             <img src="../../../assets/Pharmacy/horlics.jfif" height="50%" width="39%" />
             <h4>Horlicks</h4>
             <h6>MRP <span>(Rs.100)</span></h6>
             <h6>Rs.89</h6>
-            <br>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
-            </svg>
-            <button class="btn btn-success" type="submit">Add to Cart</button>
+            <button class="btn btn-success" style="margin-left: 20%;" type="submit">Add to Cart</button>
+            <br><br>
+            <div>
+                <button class="btn btn-secondary btn-sm" style="margin-left: 20%; height: 27px;" type="button" (click)="horlickCount('-','Horlicks')">-</button>
+                <input type="number" style="width: 20%; height: 25px; margin-left: 2%;" [(ngModel)]="HorlicksCount"/>
+                <button class="btn btn-secondary btn-sm"  style="margin-left: 2%; height: 27px;" type="button" (click)="horlickCount('+','Horlicks')">+</button>
+            </div>
         </div>
     </div>
     <br><br>
@@ -372,30 +368,4 @@
         </div>
     </div>
     <br><br>
-    <div>
-        <h2> Directives Country/State/City</h2>
-        <button type="button" class="btn btn-primary" (click)="isCountryShow = !isCountryShow">Show Country</button>
-        <div *ngIf="isCountryShow">
-            Country : <select id="selectedCountry" [(ngModel)]="selectedCountry" (change)="loadStates()">
-                <option> -- Select --</option>
-                <option *ngFor="let country of countries">
-                    {{country}}
-                </option>
-            </select>
-            <div *ngIf="selectedCountry != ''">
-                States : <select id="selectedState" [(ngModel)]="selectedState" (change)="loadCities()">
-                    <option> -- Select --</option>
-                    <option *ngFor="let state of states">
-                        {{ state }}
-                    </option>
-                </select>
-            </div>
-            Cities : <select id="selectedCity" [(ngModel)]="selectedCity">
-                <option> -- Select --</option>
-                <option *ngFor="let city of cities">
-                    {{ city }}
-                </option>
-            </select>
-        </div>
-    </div>
 </div>

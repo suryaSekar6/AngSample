@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,9 +7,13 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
 
-  constructor(private router: Router){
+
+  ngOnInit(): void {
+    this.getLgDetails();
+  }
+  constructor(private router: Router, private http: HttpClient){
 
   }
 
@@ -16,12 +21,28 @@ export class LoginComponent {
   pswd : string = '';
   msg : string = '';
 
+  users : any;
+
+
+  getLgDetails(){
+
+    this.http.get('https://retoolapi.dev/z10JwY/skyhospLg').subscribe( data => {
+      this.users = data;
+    },
+    err => { console.log(err);});
+  }
+
   validateLogin(){
-    if(this.username.trim()=='trip' && this.pswd.trim()=='trip'){
-      sessionStorage.setItem('user', this.username);
-      this.redirectToHome();
-    }else{
-      this.msg = "Failed";
+
+    for(let user of this.users){
+      if(user.username == this.username && user.password == this.pswd){
+        sessionStorage.setItem('user', this.username);
+        sessionStorage.setItem('userMob', user.mobile);
+        sessionStorage.setItem('userEmail', user.email)
+        this.redirectToHome();
+      }else{
+        this.msg = "Failed";
+      }
     }
   }
 

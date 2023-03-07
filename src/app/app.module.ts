@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,8 @@ import { FormComponent } from './form/form.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { NewaccComponent } from './newacc/newacc.component';
+import { CartComponent } from './cart/cart.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +37,17 @@ import { NewaccComponent } from './newacc/newacc.component';
     FormComponent,
     PaymentComponent,
     ForgetpassComponent,
-    NewaccComponent
+    NewaccComponent,
+    CartComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    HeaderComponent
+    HeaderComponent,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
